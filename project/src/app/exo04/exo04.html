@@ -1,0 +1,20 @@
+<div id="exo04-page">
+	<form>
+		<input ng-model="exo04.input" />
+		<button ng-click="exo04.consol()">search</button>
+	</form>
+	<div class="gros-texte">{{exo04.superService.city}}</div>
+	<div ng-show="exo04.superMeteo.meteoList != ''">
+		<div>
+			<img src="http://openweathermap.org/img/w/{{exo04.superMeteo.meteoList[0].weather[0].icon}}.png"/>
+			<p class="gros-texte">{{exo04.superMeteo.meteoList[0].main.temp}}°C</p>
+		</div>
+		<a href="" ng-click="exo04.more()">More</a>
+	</div>
+
+
+
+
+
+
+</div>
