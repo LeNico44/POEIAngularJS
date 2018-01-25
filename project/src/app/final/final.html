@@ -1,0 +1,10 @@
+<div id="final-page">
+	<div id="recherche">
+		<input ng-model="final.input"/>
+		<button ng-click="final.search()">Buvons !</button>
+	</div>
+	<p>{{final.searchConfigService.ingredient}}</p>
+	<div ng-repeat="cocktail in final.cocktailSearchService.cocktailList">
+		<cocktail cocktail-element="cocktail"></cocktail>
+	</div>
+</div>
